@@ -427,9 +427,7 @@ def ecranfin():
            
     pygame.quit()
                 
-             
-L=0
-l=0
+
 menu(True)
  
 pygame.quit()
