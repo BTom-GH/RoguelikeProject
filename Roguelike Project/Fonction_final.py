@@ -17,7 +17,7 @@ def fenetre():
     ecran = pygame.display.set_mode((largeur_ecran,hauteur_ecran), pygame.RESIZABLE)
     
     #icone et titre de la fenetre
-    icone = pygame.image.load("Isaac.png").convert_alpha()
+    icone = pygame.image.load("thug.png").convert_alpha()
     pygame.display.set_icon(icone)
     pygame.display.set_caption("Roguelike Project")
 
@@ -190,7 +190,7 @@ def jeu():
     ListeS=listeSalles(tableau,largeur_ecran,hauteur_ecran)
     ListeS.setEmplacementSalles(progression,largeur_ecran,hauteur_ecran)
     ListeS.getListe()[0].creationDecors(niveau1,ecran,fond_jeu,largeur_ecran,hauteur_ecran)
-    joueur=Personnage("Isaac.png")
+    joueur=Personnage("thug.png")
     joueur.redimensionner()
     pos_perso_x=(int(largeur_ecran/2)-((joueur.getImage()).get_width()/2))
     pos_perso_y= ((hauteur_ecran/2)-((joueur.getImage()).get_height()/2))
